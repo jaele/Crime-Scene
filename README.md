@@ -1,18 +1,20 @@
 # Crime-Scene
 A text based game where the user traverses through a mansion to solve a crime.
 
+
+
 Instructions on game installation.
 
-Locate setup.exe and Setup.msi files.
+-Locate setup.exe and Setup.msi files
 
-Download these two files.
+-Download these two files
 
-Click on setup.exe and continue with installation.
+-Click on setup.exe and continue with installation
 
-Once done, a shortcut of the game will appear on the desktop.
+-Once done, a shortcut of the game will appear on the desktop
 
-Click on the shortcut icon to play the game.
+-Click on the shortcut icon to play the game
 
-Uninstall the game in control panel.
+-Uninstall the game in control panel
 
 
