@@ -11,7 +11,7 @@ class LivingRoom :  public Mansion
 {
 
 private:
-
+	// pointers to living room
 	LivingRoom *west;
 	LivingRoom *east;
 	LivingRoom *north;

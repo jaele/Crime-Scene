@@ -1,5 +1,5 @@
 #include "LivingRoom.hpp"
-
+#include "Macros.hpp"
 
 LivingRoom::LivingRoom()
 {
@@ -37,7 +37,11 @@ LivingRoom::LivingRoom()
 
 
 
-
+/* Function name: special function
+** Description: allows the player to interrogate the area
+** Paramters: referenced player object
+**
+*/
 bool LivingRoom::specialFunction(Player &player1)
 {
 

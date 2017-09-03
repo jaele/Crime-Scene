@@ -1,4 +1,5 @@
 #include "Kitchen.hpp"
+#include "Macros.hpp"
 
 Kitchen::Kitchen()
 {
@@ -26,6 +27,11 @@ Kitchen::Kitchen()
 
 }
 
+/* Function name: special function
+** Description: allows the player to investigate the area
+** Paramters: referenced player object
+**
+*/
 bool Kitchen::specialFunction(Player &player1)
 {
 	bool validInput = false;

@@ -8,15 +8,16 @@
 class Game
 {
 private:
-
+	// timer for game
 	int timer;
 
 public:
 	Game();
 
-
+	// start the game
 	void startGame();
 
+	// display the gui to the player
 	void playerIntro(Player &);
 
 	void displaycurrentArea(Player&, Mansion);
@@ -29,17 +30,7 @@ public:
 
 	void displayAccuse(Player &, Mansion &);
 
-
-	void gameEnding(Player &);
-
 };
-
-// macros
-int verifyInput();
-void pause();
-void pause2();
-void clrf();
-
 
 
 #endif

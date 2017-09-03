@@ -8,7 +8,7 @@ class StudyRoom : public Mansion
 {
 	
 private:
-		
+	// pointers to study room
 	StudyRoom *east;
 	StudyRoom *west;
 	StudyRoom *north;

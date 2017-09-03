@@ -10,7 +10,7 @@ class Stairway :  public Mansion
 {
 
 private:
-	
+	// pointers to stairway
 	Stairway *east;
 	Stairway *west;
 	Stairway *north;

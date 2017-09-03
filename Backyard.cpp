@@ -1,4 +1,5 @@
 #include "Backyard.hpp"
+#include "Macros.hpp"
 
 Backyard::Backyard()
 {
@@ -29,7 +30,11 @@ Backyard::Backyard()
 
 }
 
-
+/* Function name: special function
+** Description: allows the player to make accusation and arrest the suspects
+** Paramters: referenced player object
+** 
+*/
 bool Backyard::specialFunction(Player &player1)
 {
 

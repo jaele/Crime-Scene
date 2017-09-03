@@ -12,11 +12,6 @@ SecretPassage::SecretPassage()
 	moveNorth = "(N) Head to the garage";
 	moveSouth = "(S) Head to the garage";
 
-
-	search1 = "";
-	search2 = "";
-	search3 = "";
-
 	investigate = false;
 	interrogate = false;
 	arrestable = false;

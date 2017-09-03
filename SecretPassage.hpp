@@ -10,7 +10,7 @@ class SecretPassage : public Mansion
 {
 
 private:
-
+	// pointers to secret passage
 	SecretPassage *east;
 	SecretPassage *west;
 	SecretPassage *north;

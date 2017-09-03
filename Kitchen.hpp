@@ -9,7 +9,7 @@ class Kitchen : public Mansion
 {
 
 private:
-	
+	// pointers to kitchen
 	Kitchen *east;
 	Kitchen *west;
 	Kitchen *north;

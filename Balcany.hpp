@@ -7,7 +7,7 @@ class Balcany : public Mansion
 {
 
 private:
-
+	// pointers to balcany
 	Balcany *east;
 	Balcany *west;
 	Balcany *north;

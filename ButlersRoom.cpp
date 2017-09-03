@@ -13,10 +13,6 @@ ButlersRoom::ButlersRoom()
 	moveNorth = "(N) Head to secret passage";
 	moveSouth = "(S) Head to secret passage";
 
-	search1 = "";
-	search2 = "";
-	search3 = "";
-	
 	investigate = false;
 	interrogate = false;
 	arrestable = false;

@@ -1,15 +1,16 @@
 /*********************************************************************************************************************
 ** Author: James Le
 ** Date: 12/07/2015
-** Description: This is a test driver program.
+** Description: This is a test driver program for the final project. The game will start here, and the player will 
+** be allowed to choose fro the menu options. 
 ** Input: makefile, ./test
 ** Output: testDriver
 *********************************************************************************************************************/
 
-
 #include <iostream>
 #include <ctime>
 
+#include "Macros.hpp"
 #include "Game.hpp"
 #include "Mansion.hpp"
 #include "Character.hpp"
@@ -18,6 +19,7 @@
 
 using namespace std;
 
+// view the introduction menu
 void viewIntro();
 void viewInstruction();
 void viewCredit();
@@ -53,7 +55,7 @@ int main()
 			{
 				clrf();
 				viewInstruction();
-				pause();
+				paused();
 
 				break;
 			}
@@ -62,7 +64,7 @@ int main()
 			{
 				clrf();
 				viewCredit();
-				pause();
+				paused();
 
 				break;
 			}

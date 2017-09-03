@@ -1,5 +1,5 @@
 #include "StudyRoom.hpp"
-
+#include "Macros.hpp"
 
 StudyRoom::StudyRoom()
 {
@@ -28,7 +28,11 @@ StudyRoom::StudyRoom()
 
 }
 
-
+/* Function name: special function
+** Description: allows the player to investigate the area
+** Paramters: referenced player object
+**
+*/
 bool StudyRoom::specialFunction(Player &player1)
 {
 	bool validInput = false;

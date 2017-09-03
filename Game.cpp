@@ -1,13 +1,8 @@
 #include "Game.hpp"
-#include "Character.hpp"
-#include "Player.hpp"
-#include "Mansion.hpp"
-
+#include "Macros.hpp"
 
 #include <iostream>
 #include <string>
-#include <sstream>
-#include <limits>
 
 using namespace std;
 
@@ -56,7 +51,7 @@ void Game::startGame()
 			}
 
 
-			//choice = game.filterChar();
+			
 			cin >> choice;
 
 			if (choice == 'N'|| choice == 'n')
@@ -106,7 +101,7 @@ void Game::startGame()
 				{
 
 
-					cout << "Cannot be investigated " << endl;
+					cout << "Cannot be investigated here " << endl;
 				}
 
 			}
@@ -123,7 +118,7 @@ void Game::startGame()
 
 				else
 				{
-					cout << "Cannot be interrogated " << endl;
+					cout << "Cannot be interrogated here" << endl;
 				}
 
 			}
@@ -138,7 +133,7 @@ void Game::startGame()
 
 				else
 				{
-					cout << "Can't arrest yet! " << endl;
+					cout << "Can't be arrested here,! " << endl;
 				}
 			}
 
@@ -158,7 +153,7 @@ void Game::startGame()
 			{
 				cout << endl << endl;
 				cout << "What will you do next?" << endl;
-				pause();
+				paused();
 			}
 			
 		}
@@ -172,7 +167,7 @@ void Game::startGame()
 
 }
 
-
+// Introduction to the game and a little background on each suspects
 void Game::playerIntro(Player &player1)
 {
 	clrf();
@@ -181,7 +176,7 @@ void Game::playerIntro(Player &player1)
 	cout << " Greatings detective! " << endl<< endl;
 	cout << " You find yourself in front of an old mansion where the crime scene has occured" << endl<<endl;
 	cout << " As a detective, it is your duty to investigate and find the criminal." << endl<< endl;
-	pause();
+	paused();
 
 
 	cout << endl << endl << endl;
@@ -190,50 +185,50 @@ void Game::playerIntro(Player &player1)
 	cout << "The estimated time of his death was around 8:00pm to 9:20pm.." << endl << endl;
 	cout << "His neck was stabbed by a sharp weapon, and a large amount of blood was lost. " << endl << endl;
 	cout << "What kind of weapon was used is unknown for now. " << endl << endl;
-	pause();
+	paused();
 
 
 	cout << endl << endl << endl;
 	cout << "There are six suspects, each related to the chairman." << endl << endl;
 	cout << "You met with all six suspects, but have no idea on who the murderer is.." << endl << endl;
 	cout << "The suspects each accused each other, but it is your duty to find concrete evidence. " << endl;
-	pause();
+	paused();
 
 
 	cout << endl << endl << endl;
 	cout << "1.First suspect: Subcontractor CEO, James Wield (63) - He is a long friend of the chairman " << endl;
 	cout << "and owns a pork and meat processing company." << endl;
-	pause();
+	paused();
 
 
 	cout << endl << endl << endl;
 	cout << "2.Second suspect: Home-care nurse, Cythnia Upton (32) - She has been treating the chairman " << endl;
 	cout << "ever since he was diagnosed with high blood pressure and diabetes. " << endl << endl;
-	pause();
+	paused();
 
 
 	cout << endl << endl << endl;
 	cout << "3.Third suspect: Victim's wife, Martha Thatch (60) - She was at home the entire time watching	" << endl;
 	cout << "TV. Saw everyone coming in and out of the house." << endl << endl;
-	pause();
+	paused();
 
 
 	cout << endl << endl << endl;
 	cout << "4.Fourth suspect: Victim's daughter, Jane Smith (30) - The daughter is a ballerina and she likes " << endl;
 	cout << "to shop for luxurious bags. She came home around 5:00pm and had dinner with her parents." << endl << endl;
-	pause();
+	paused();
 
 	cout << endl << endl << endl;
 	cout << "5.Fifth suspect: Victim's brother-in-law, Henry Thatch (41) - Unmarried and brother of the victim's wife." << endl;
 	cout << "He came home at around 7:10pm during the day of the crime. After talking with the chairman, he went to the " << endl;
 	cout << "local conveience store to by some beers. " << endl << endl;
-	pause();
+	paused();
 
 
 	cout << endl << endl << endl;
 	cout << "6.Sixth suspect: The family's driver and chairman's butler, Charlie Brown (32) - Originally worked at a private" << endl;
 	cout << "security company, and now got his current job through an interview with the chairman's wife." << endl << endl;
-	pause();
+	paused();
 
 
 	clrf();
@@ -262,7 +257,7 @@ void Game::playerIntro(Player &player1)
 		}
 
 	}
-	pause();
+	paused();
 
 
 
@@ -273,14 +268,15 @@ void Game::playerIntro(Player &player1)
 	cout << "You must find the 1 evidence that is essential to accusing and arresting the murderer. " << endl << endl;
 	cout << "You will present the items during the trial, and 1 of the item has to be associated with 1 of the suspect." << endl << endl;
 	cout << "To place an item back, select the choice again. " << endl << endl;
-	pause();
+	paused();
 
 	clrf();
 	cout << "Ok.. " << player1.getdisplayName() << ", let's start finding some clues in this mansion.." << endl << endl;
-	pause();
+	paused();
 
 }
 
+// display the current area user interface screen, and all the spaces the play visit
 void Game::displaycurrentArea(Player &player1, Mansion currentArea)
 {
 
@@ -311,7 +307,7 @@ void Game::displaycurrentArea(Player &player1, Mansion currentArea)
 
 }
 
-
+// display the inventory user interface
 void Game::displayPocket(Player &player1)
 {
 
@@ -340,7 +336,7 @@ void Game::displayPocket(Player &player1)
 }
 
 
-
+// display the investigation user interface
 void Game::displayInvestigate(Player &player1, Mansion &currentArea)
 {
 
@@ -368,13 +364,13 @@ void Game::displayInvestigate(Player &player1, Mansion &currentArea)
 
 		if (!finished)
 		{
-			pause();
+			paused();
 		}
 	}
 
 }
 
-
+// display the interrogation user interface
 void Game::displayInterrogate(Player &player1, Mansion &currentArea)
 {
 
@@ -406,11 +402,13 @@ void Game::displayInterrogate(Player &player1, Mansion &currentArea)
 
 		if (!finished)
 		{
-			pause();
+			paused();
 		}
 	}
 }
 
+
+// display the arrest user interface
 void Game::displayAccuse(Player &player1, Mansion &currentArea)
 {
 
@@ -439,71 +437,10 @@ void Game::displayAccuse(Player &player1, Mansion &currentArea)
 
 		if (!finished)
 		{
-			pause();
+			paused();
 		}
 	}
 }
 
 
-void Game::gameEnding(Player & player1)
-{
-	clrf();
-
-	if (timer == 0)
-	{
-
-
-	}
-
-}
-
-
-// function to verify inputs
-int verifyInput()
-{
-	int choice = 0;
-	string selection;
-	stringstream stream;
-	cout << "Enter your selection: ";
-	getline(cin, selection);
-
-	stream << selection;
-	stream >> choice;
-
-	if (choice < 1)
-	{
-		choice = verifyInput();
-	}
-
-
-	return choice;
-}
-
-
-// function to pause the game and continue when user hits enter
-void pause()
-{
-
-	cout << endl << endl << endl;
-	cout << "Press the Enter to continue." << flush;
-	cin.ignore(numeric_limits < streamsize> ::max(), '\n');
-}
-
-void pause2()
-{
-	cout << endl << endl << endl;
-	cin.ignore(numeric_limits < streamsize> ::max(), '\n');
-}
-
-
-
-// function to clear the screen with 100 blank lines 
-void clrf()
-{
-	for (int i = 0; i < 100; i++)
-	{
-		cout << endl;
-	}
-
-}
 

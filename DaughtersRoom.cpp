@@ -1,5 +1,5 @@
 #include "DaughtersRoom.hpp"
-
+#include "Macros.hpp"
 
 DaughtersRoom::DaughtersRoom()
 {
@@ -28,7 +28,11 @@ DaughtersRoom::DaughtersRoom()
 }
 
 
-
+/* Function name: special function
+** Description: allows the player to investigate the area
+** Paramters: referenced player object
+**
+*/
 bool DaughtersRoom::specialFunction(Player &player1)
 {
 	bool validInput = false;

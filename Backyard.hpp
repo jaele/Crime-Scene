@@ -4,11 +4,11 @@
 #include "Mansion.hpp"
 #include "Game.hpp"
 
-class Backyard: public Mansion
+class Backyard :public Mansion
 {
 
 private:
-
+	// pointers to backyard
 	Backyard *east;
 	Backyard *west;
 	Backyard *north;

@@ -26,26 +26,6 @@ private:
 
 
 
-	bool keyitemFound;
-	bool arrestedMurderer;
-
-
-	bool load1;
-	bool load2;
-	bool load3;
-
-	bool pocketFull;
-
-
-
-	bool arrestJane;
-	bool arrestHenry;
-	bool arrestMartha;
-	bool arrestJames;
-	bool arrestCharlie;
-	bool arrestCynthia;
-
-
 public:
 	Player();
 
@@ -61,21 +41,8 @@ public:
 	void setbankdebtNotes(bool);
 	void setsleepingPills(bool);
 	void setcontractDocument(bool);
-	void setload1(bool);
-	void setload2(bool);
-	void setload3(bool);
-	void setpocketFull(bool);
-
-	void setarrestJane(bool);
-	void setarrestHenry(bool);
-	void setarrestMartha(bool);
-	void setarrestJames(bool);
-	void setarrestCharlie(bool);
-	void setarrestCynthia(bool);
-
-
-
-
+	
+	
 	bool getcellPhone();
 	bool getbeerCan();
 	bool getrainCoat();
@@ -87,20 +54,7 @@ public:
 	bool getbankdebtNotes();
 	bool getsleepingPills();
 	bool getcontractDocument();
-	bool getload1();
-	bool getload2();
-	bool getload3();
-	bool getpocketFull();
-
-
-	bool getarrestJane();
-	bool getarrestHenry();
-	bool getarrestMartha();
-	bool getarrestJames();
-	bool getarrestCharlie();
-	bool getarrestCynthia();
-
-
+	
 
 	void checkPocket();
 

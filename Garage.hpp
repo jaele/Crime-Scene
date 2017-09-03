@@ -7,7 +7,7 @@
 class Garage:  public Mansion
 {
 private:
-
+	// pointers to garage
 	Garage *east;
 	Garage *west;
 	Garage *north;

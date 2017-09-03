@@ -12,11 +12,12 @@ class Character
 {
 
 protected:
-
+	// character name and location descritipons
 	string characterName;
 	string displayName;
 	string previousLocation;
 
+	// items
 	string pocket1;
 	string pocket2;
 	string pocket3;
@@ -47,7 +48,7 @@ public:
 	virtual void setpreviousLocation(string);
 	virtual string  getpreviousLocation();
 
-
+	// getters for the items
 	virtual string getPocket1();
 	virtual string getPocket2();
 	virtual string getPocket3();
@@ -60,6 +61,7 @@ public:
 	virtual string getPocket10();
 	virtual string getPocket11();
 
+	// check the pocket/inventory
 	virtual void checkPocket() = 0;
 
 
@@ -68,13 +70,3 @@ public:
 
 #endif
 
-/*
-John Smith - chairman
-Martha Thatch - chairman's wife
-Jane Smith - daughter
-Henry Thatch - chairman's brother-in-law
-Charlie Brown- chairman's butler
-James Wield - subcontractor CEO 
-Cynthia Upton - homecare nurse
-
-*/

@@ -7,7 +7,7 @@
 class BrotherinlawsRoom: public Mansion
 {
 private:
-	
+	// pointers to brother-in-laws room
 	BrotherinlawsRoom *east;
 	BrotherinlawsRoom *west;
 	BrotherinlawsRoom *north;
