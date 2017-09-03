@@ -3,18 +3,18 @@ A text based game where the user traverses through a mansion to solve a crime.
 
 
 
-Instructions on game installation.
+Instructions on game installation:
 
--Locate setup.exe and Setup.msi files
+-locate setup.exe and Setup.msi files
 
--Download these two files
+-download these two files
 
--Click on setup.exe and continue with installation
+-click on setup.exe and continue with installation
 
--Once done, a shortcut of the game will appear on the desktop
+-once done, a shortcut of the game will appear on the desktop
 
--Click on the shortcut icon to play the game
+-click on the shortcut icon to play the game
 
--Uninstall the game in control panel
+-uninstall the game in control panel
 
 
